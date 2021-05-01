@@ -1,0 +1,33 @@
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap'rel='stylesheet');
+
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Roboto', sans-serif;
+  height: 100vh;
+  display: flex;
+  /* flex-direction: column; */
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  overflow: hidden;
+}
+
+.bg {
+  background: url('https://eco-business.imgix.net/ebmedia/fileuploads/Feature_RightsofNature_inline2.jpg?fit=crop&h=801&ixlib=django-1.2.0&q=85&w=1200')
+    no-repeat center;
+  background-size: cover;
+  width: calc(100vw + 60px);
+  height: calc(100vh + 60px);
+  position: absolute;
+  top: -30px;
+  left: -30px;
+  z-index: -1;
+  filter: blur(30px);
+}
+
+.loading-text {
+  font-size: 50px;
+}

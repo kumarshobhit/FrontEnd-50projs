@@ -1,0 +1,48 @@
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+* {
+	box-sizing: border-box;
+}
+body {
+	background-color: rgb(79, 79, 238);
+	font-family: 'Roboto', sans-serif;
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	margin: 0;
+	overflow: hidden;
+}
+
+h3 {
+	color: white;
+	margin: 0 0 20px;
+}
+
+.container {
+	width: 400px;
+}
+
+textarea {
+	font-size: 16px;
+	margin: 0 0 20px;
+	font-family: inherit;
+	border: 0;
+	width: 100%;
+	padding: 10px 10px;
+	height: 100px;
+}
+
+.tag {
+	background-color: rgb(238, 136, 40);
+	color: white;
+	border-radius: 5px;
+	padding: 5px 5px;
+	margin: 0 5px 0 0;
+}
+
+.tag.highlight {
+	background-color: teal;
+}

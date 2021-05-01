@@ -1,0 +1,92 @@
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+body {
+	font-family: 'Open Sans', sans-serif;
+	margin: 0;
+}
+
+.slider-container {
+	position: relative;
+	overflow: hidden;
+	width: 100vw;
+	height: 100vh;
+}
+
+.left-slide {
+	position: absolute;
+	left: 0;
+	top: 0;
+	height: 100%;
+	width: 40%;
+	transition: transform .5s ease-in-out;
+}
+
+.left-slide > div {
+	height: 100%;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	color: white;
+}
+
+.left-slide > div h1 {
+	margin-bottom: 20px;
+	font-size: 30px;
+}
+
+.right-slide {
+	position: absolute;
+	top: 0;
+	left: 40%;
+	height: 100%;
+	width: 60%;
+	transition: transform .5s ease-in-out;
+}
+
+.right-slide > div {
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 100%;
+	width: 100%;
+}
+
+.class-button button {
+	position: absolute;
+	left: 40%;
+	top: 50%;
+	font-size: 20px;
+	padding: 10px;
+	background-color: #fff;
+	border: 0;
+	color: #aaa;
+}
+
+button:hover {
+	color: #222;
+}
+
+button:focus {
+	outline: 0;
+}
+
+.class-button .down-button {
+	transform: translateX(-100%);
+	border-top-left-radius: 10px;
+	border-bottom-left-radius: 10px;
+}
+
+.class-button .up-button {
+	transform: translateY(-100%);
+	border-top-right-radius: 10px;
+	border-bottom-right-radius: 10px;
+}

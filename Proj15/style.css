@@ -1,0 +1,37 @@
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+* {
+	box-sizing: border-box;
+}
+body {
+	background-color: rgb(194, 54, 194);
+	font-family: 'Roboto', sans-serif;
+	height: 100vh;
+	display: flex;
+	/* flex-direction: column; */
+	justify-content: center;
+	align-items: center;
+	margin: 0;
+	overflow: hidden;
+	color: white;
+}
+
+.counter-container {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	text-align: center;
+	margin: 10px 20px;
+}
+
+.counter {
+	margin-top: 5px;
+	font-size: 2rem;
+}
+
+@media (max-width: 580px) {
+	body {
+		flex-direction: column;
+	}
+}

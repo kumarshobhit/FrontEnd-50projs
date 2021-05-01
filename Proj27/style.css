@@ -1,0 +1,60 @@
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+* {
+	box-sizing: border-box;
+}
+body {
+	background-color: rebeccapurple;
+	font-family: 'Roboto', sans-serif;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+	margin: 0;
+	overflow: hidden;
+}
+
+.btn {
+	background-color: #ffff;
+	color: rebeccapurple;
+	padding: 1em;
+	border: 0;
+	border-radius: 5px;
+}
+
+.btn:focus {
+	outline: 0;
+}
+
+.btn:active {
+	transform: scale(0.98);
+}
+
+.toasts {
+	position: fixed;
+	bottom: 10px;
+	right: 10px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: flex-end;
+}
+
+.toast {
+	background-color: #ffff;
+	border-radius: 5px;
+	padding: 1em 2em;
+	margin: 0.5em;
+}
+
+.info {
+	color: rebeccapurple;
+}
+
+.error {
+	color: red;
+}
+.success {
+	color: green;
+}
