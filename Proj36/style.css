@@ -1,0 +1,33 @@
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+* {
+	box-sizing: border-box;
+}
+body {
+	background-color: #111;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.container {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-wrap: wrap;
+	max-width: 500px;
+}
+
+.square {
+	background-color: #1d1d1d;
+	width: 20px;
+	height: 20px;
+	box-shadow: 0 0 2px #000;
+	margin: 2px;
+	transition: 2s ease;
+}
+
+.square:hover {
+	transition-duration: 0s;
+}

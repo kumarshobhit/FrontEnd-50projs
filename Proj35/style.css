@@ -1,0 +1,51 @@
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+* {
+	box-sizing: border-box;
+}
+body {
+	font-family: 'Roboto', sans-serif;
+	overflow: hidden;
+}
+
+img {
+	width: 500px;
+	height: 500px;
+	object-fit: cover;
+}
+
+.carousel {
+	margin: 10px auto;
+	box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+	height: 530px;
+	width: 500px;
+	overflow: hidden;
+}
+
+.image-container {
+	display: flex;
+	transform: translateX(0px);
+	transition: translate 0.3s ease-in-out;
+}
+
+.buttons-container {
+	display: flex;
+	justify-content: space-between;
+}
+
+.btn {
+	background-color: rebeccapurple;
+	color: white;
+	border: none;
+	padding: 0.5rem;
+	cursor: pointer;
+}
+
+.btn:focus {
+	outline: 0;
+}
+
+.btn:hover {
+	opacity: 0.9;
+}
