@@ -1,0 +1,70 @@
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+
+* {
+	box-sizing: border-box;
+}
+body {
+	font-family: 'Open Sans', sans-serif;
+	background-color: rgb(202, 105, 202);
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.phone {
+	position: relative;
+	overflow: hidden;
+	border: 2px solid black;
+	border-radius: 10px;
+	height: 600px;
+	width: 340px;
+}
+
+.content {
+	position: absolute;
+	height: calc(100% - 60px);
+	width: 100%;
+	top: 0;
+	left: 0;
+	opacity: 0;
+}
+
+.show {
+	opacity: 1;
+}
+
+.nav {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+}
+
+ul {
+	height: 60px;
+	background-color: #fff;
+	display: flex;
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+}
+
+li {
+	cursor: pointer;
+	flex: 1;
+	text-align: center;
+	padding: 10px;
+	color: rgb(129, 124, 124);
+}
+
+p {
+	font-size: 12px;
+	margin: 2px 0;
+}
+
+li.active,
+li:hover {
+	color: purple;
+}
